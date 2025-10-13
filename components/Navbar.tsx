@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bg-white shadow-sm border-b border-gray-100 h-20 mt-4 font-inter"
+      className="bg-white shadow-sm border-b border-gray-100 h-20  font-inter"
       style={fontStyle}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-14">

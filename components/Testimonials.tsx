@@ -12,6 +12,10 @@ const imageMap: { [key: number]: string } = {
   6: '/p3.png',
 };
 
+// Set profile image dimensions (in px) for next/image
+const PROFILE_IMG_WIDTH = 48;
+const PROFILE_IMG_HEIGHT = 48;
+
 const Testimonials = () => {
   const testimonials = [
     {
@@ -110,6 +114,8 @@ const Testimonials = () => {
                   <Image
                     src={imageMap[testimonial.id]}
                     alt={testimonial.name}
+                    width={PROFILE_IMG_WIDTH}
+                    height={PROFILE_IMG_HEIGHT}
                     className="w-12 h-12 object-cover rounded-full"
                   />
                 </div>
