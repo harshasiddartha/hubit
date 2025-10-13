@@ -10,6 +10,8 @@ import Pricing from "../components/Pricing";
 import CustomerDiversity from "../components/CustomerDiversity";
 import Footer from "../components/Footer";
 import DarkHero from "../components/DarkHero";
+import FAQ from "../components/FAQSection";
+import UseCases from "../components/UseCasesSection";
 
 export default function Home() {
   return (
@@ -23,7 +25,8 @@ export default function Home() {
       <TaskTracking />
       <CustomerDiversity />
       <Pricing />
-     
+      <FAQ />
+      <UseCases />
       <Testimonials />
       <DarkHero />
       <Footer />

@@ -1,45 +1,44 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 
 const CustomerDiversity = () => {
-  // Customer avatar positions on the map
-  const customers = [
+  const [activePersona, setActivePersona] = useState(0);
+  
+  // Persona data
+  const personas = [
+    {
+      id: 0,
+      title: "Solo Founders",
+      description: "Generate consistent sales without extra hours.",
+      features: [
+        "Daily feed of ready-now accounts",
+        "One-click enrichment & AI outreach", 
+        "Slack/Email alerts so you never miss a moment"
+      ],
+      cta: "Show me founder mode →"
+    },
     {
       id: 1,
-      name: "North America West",
-      position: { top: '32%', left: '12%' }, // US/Canada west coast
-      pinPosition: { top: '39%', left: '12%' }
+      title: "Agencies", 
+      description: "Grow client revenue on autopilot.",
+      features: [
+        "Multi-client workspaces & ICPs",
+        "Automated signal → enrichment → sequence flows",
+        "White-label reports to prove ROI"
+      ],
+      cta: "Show me agency mode →"
     },
     {
       id: 2,
-      name: "North America East", 
-      position: { top: '28%', left: '22%' }, // US east coast
-      pinPosition: { top: '35%', left: '22%' }
-    },
-    {
-      id: 3,
-      name: "South America",
-      position: { top: '58%', left: '28%' }, // Brazil/Argentina region
-      pinPosition: { top: '65%', left: '28%' }
-    },
-    {
-      id: 4,
-      name: "Europe",
-      position: { top: '22%', left: '50%' }, // Central/eastern Europe
-      pinPosition: { top: '29%', left: '50%' }
-    },
-    {
-      id: 5,
-      name: "Asia",
-      position: { top: '25%', left: '75%' }, // China
-      pinPosition: { top: '32%', left: '75%' }
-    },
-    {
-      id: 6,
-      name: "Southeast Asia/Oceania",
-      position: { top: '65%', left: '85%' }, // Australia/Indonesia region
-      pinPosition: { top: '72%', left: '85%' }
+      title: "Sales Teams",
+      description: "Hit quota faster—without more SDRs.",
+      features: [
+        "Live intent routing to reps",
+        "Explainable scoring & prioritized queues", 
+        "CRM + inbox sync for a closed loop"
+      ],
+      cta: "Show me sales mode →"
     }
   ];
 
@@ -52,74 +51,66 @@ const CustomerDiversity = () => {
           {/* Tag */}
           <div className="inline-block mb-6">
             <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
-              Customer Diversity
+              Who it&quot;s for
             </span>
           </div>
 
           {/* Main Title */}
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
-            Extending exceptional services to clients across the universe.
+            Built for every stage of growth
           </h2>
         </div>
 
-        {/* Map Section */}
-        <div className="relative mb-16">
-          <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden">
-            
-            {/* Map Background */}
-            <img
-              src="/map.png"
-              alt="World Map"
-              className="w-full h-full object-cover"
-            />
+        {/* Persona Tabs */}
+        <div className="mb-12">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            {personas.map((persona, index) => (
+              <button
+                key={persona.id}
+                onClick={() => setActivePersona(index)}
+                className={`px-6 py-3 rounded-lg font-semibold transition-colors ${
+                  activePersona === index
+                    ? 'bg-gray-800 text-white'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                }`}
+              >
+                {persona.title}
+              </button>
+            ))}
+          </div>
 
-            {/* Customer Avatars Overlay */}
-            <div className="absolute inset-0">
-              {customers.map((customer) => (
-                <div key={customer.id}>
-                  
-                  {/* Avatar Placeholder */}
-                  <div
-                    className="absolute w-16 h-16 bg-gray-300 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10"
-                    style={{
-                      top: customer.position.top,
-                      left: customer.position.left,
-                      transform: 'translate(-50%, -50%)'
-                    }}
-                  >
-                    <span className="text-gray-600 text-xs font-semibold text-center px-1">
-                      Customer {customer.id}
-                    </span>
+          {/* Active Persona Content */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                {personas[activePersona].title}
+              </h3>
+              <p className="text-xl text-gray-600 mb-8">
+                {personas[activePersona].description}
+              </p>
+            </div>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              {personas[activePersona].features.map((feature, index) => (
+                <div key={index} className="text-center">
+                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
                   </div>
-
-                  {/* Location Pin */}
-                  <div
-                    className="absolute w-4 h-4 bg-orange-500 rounded-full shadow-lg z-20"
-                    style={{
-                      top: customer.pinPosition.top,
-                      left: customer.pinPosition.left,
-                      transform: 'translate(-50%, -50%)'
-                    }}
-                  ></div>
+                  <p className="text-gray-700 font-medium">{feature}</p>
                 </div>
               ))}
             </div>
-          </div>
-        </div>
 
-        {/* Footer Section */}
-        <div className="text-center">
-          {/* Customer Count */}
-          <div className="mb-4">
-            <span className="text-6xl sm:text-7xl font-bold text-orange-500">
-              23,000+
-            </span>
+            {/* CTA Button */}
+            <div className="text-center">
+              <button className="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors">
+                {personas[activePersona].cta}
+              </button>
+            </div>
           </div>
-
-          {/* Descriptive Text */}
-          <p className="text-xl text-gray-900 font-medium">
-            Happy customers worldwide
-          </p>
         </div>
       </div>
     </div>

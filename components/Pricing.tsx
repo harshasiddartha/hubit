@@ -8,40 +8,40 @@ const Pricing = () => {
   const pricingPlans = [
     {
       id: 1,
-      name: "Basic",
-      monthlyPrice: 49,
-      yearlyPrice: 99,
+      name: "Starter",
+      monthlyPrice: 99,
+      yearlyPrice: 199,
       features: [
-        "Intuitive Task Creation and Tracking",
-        "Basic Collaboration Tools",
-        "Deadline Reminder Functionalities",
-        "User Friendly Interface"
+        "Real-time signals detection",
+        "AI-powered lead enrichment", 
+        "1 personalized sequence",
+        "Basic analytics dashboard"
       ],
       popular: false
     },
     {
       id: 2,
-      name: "Standard",
-      monthlyPrice: 99,
-      yearlyPrice: 199,
+      name: "Growth",
+      monthlyPrice: 199,
+      yearlyPrice: 399,
       features: [
-        "Intuitive Task Creation and Tracking",
-        "Basic Collaboration Tools",
-        "Deadline Reminder Functionalities",
-        "User Friendly Interface"
+        "Advanced intent filters",
+        "Multi-sequence campaigns",
+        "CRM & inbox sync",
+        "Smart alerts & reports"
       ],
       popular: true
     },
     {
       id: 3,
-      name: "Premium",
-      monthlyPrice: 199,
-      yearlyPrice: 299,
+      name: "Scale",
+      monthlyPrice: 399,
+      yearlyPrice: 799,
       features: [
-        "Intuitive Task Creation and Tracking",
-        "Basic Collaboration Tools",
-        "Deadline Reminder Functionalities",
-        "User Friendly Interface"
+        "SSO/SAML integration",
+        "Role-based access control",
+        "Custom data sources",
+        "Priority support & SLAs"
       ],
       popular: false
     }
@@ -62,7 +62,7 @@ const Pricing = () => {
 
           {/* Main Heading */}
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-12">
-            Explore and choose the perfect plan for your needs.
+            Choose the plan that fits your growth stage.
           </h2>
 
           {/* Pricing Toggle */}
@@ -137,7 +137,7 @@ const Pricing = () => {
 
               {/* CTA Button */}
               <button className="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors mb-4">
-                Start 30 Days Free Trial
+                Start Free Trial
               </button>
 
               {/* Disclaimer */}
@@ -149,37 +149,10 @@ const Pricing = () => {
         </div>
 
         {/* Footer Section */}
-        <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-12">
-          
-          {/* Built with Framer */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-400 rounded flex items-center justify-center">
-              <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1V8zm8 0a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V8zm0 4a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <span className="text-gray-700 text-sm">Built with Framer</span>
-          </div>
-
-          {/* 100% Secured Payment */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-400 rounded flex items-center justify-center">
-              <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <span className="text-gray-700 text-sm">100% Secured Payment</span>
-          </div>
-
-          {/* Made for the Professionals */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-400 rounded flex items-center justify-center">
-              <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <span className="text-gray-700 text-sm">Made for the Professionals</span>
-          </div>
+        <div className="text-center">
+          <button className="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors">
+            View Pricing
+          </button>
         </div>
       </div>
     </div>

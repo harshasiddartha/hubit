@@ -6,71 +6,49 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Leslie Alexander",
-      title: "CEO, CodeWrights",
-      quote: "Hubit has revolutionized the way we have manage tasks. The intuitive interface and seamless task organization have made in our workflow smoother than ever.",
+      name: "Sarah Chen",
+      title: "Founder, B2B SaaS",
+      quote: "As a solo founder, I booked demos within 48 hours of a funding alert. LeadSprint.AI does the prospecting for me.",
       rating: 5
     },
     {
       id: 2,
-      name: "Esther Howard",
-      title: "CTO, LogicLogix",
-      quote: "Thanks to Hubit, our team's productivity has skyrocketed. The collaborative to the features and real-time updates keep it in everyone on the same page. We've cut to down on unnecessary meetings and to in emails, allowing us to focus.",
+      name: "Marcus Rodriguez",
+      title: "Agency Owner",
+      quote: "We run intent → enrichment → outreach across 12 clients automatically. Reporting makes renewals easy.",
       rating: 5
-  
     },
     {
       id: 3,
-      name: "Robert Fox",
-      title: "Lead Data Scientist, BitComp",
-      quote: "Hubit has revolutionized the way we have manage tasks. The intuitive interface and seamless task organization have made in our workflow smoother than ever.",
+      name: "Jennifer Kim",
+      title: "Sales Director, TechCorp",
+      quote: "LeadSprint.AI has transformed our sales process. We're hitting quota 40% faster with AI-personalized outreach that actually gets responses.",
       rating: 5
     },
     {
       id: 4,
-      name: "Jacob Jones",
-      title: "Product Manager, Leap Labs",
-      quote: "Hubit has revolutionized the way we have manage tasks. The intuitive interface and seamless task organization have made in our workflow smoother than ever.",
+      name: "David Thompson",
+      title: "VP Sales, StartupXYZ",
+      quote: "The real-time intent signals are game-changing. We catch buying moments as they happen, not weeks later.",
       rating: 5
     },
     {
       id: 5,
-      name: "Wade Warren",
-      title: "Director, DataSystems LLC",
-      quote: "Thanks to Hubit, our team's productivity has skyrocketed. The collaborative to the features and real-time updates keep it in everyone on the same page. We've cut to down on unnecessary meetings and to in emails, allowing us to focus.",
+      name: "Lisa Wang",
+      title: "Marketing Director, ScaleUp",
+      quote: "Finally, a tool that understands our ICP and scores leads with clear explanations. Our conversion rates have doubled.",
       rating: 5
     },
     {
       id: 6,
-      name: "Albert Flores",
-      title: "CFO, NumberNerds",
-      quote: "Hubit has revolutionized the way we have manage tasks. The intuitive interface and seamless task organization have made in our workflow smoother than ever.",
-      rating: 5
-    },
-    {
-      id: 7,
-      name: "Eleanor Pena",
-      title: "CTO, PlanIt Systems",
-      quote: "Hubit has revolutionized the way we have manage tasks. The intuitive interface and seamless task organization have made in our workflow smoother than ever.",
-      rating: 5
-    },
-    {
-      id: 8,
-      name: "Cody Fisher",
-      title: "Founder, ContractCore LLC",
-      quote: "Thanks to Hubit, our team's productivity has skyrocketed. The collaborative to the features and real-time updates keep it in everyone on the same page. We've cut to down on unnecessary meetings and to in emails, allowing us to focus.",
-      rating: 5
-    },
-    {
-      id: 9,
-      name: "Jane Cooper",
-      title: "CMO, Purple Pixel Studio",
-      quote: "Hubit has revolutionized the way we have manage tasks. The intuitive interface and seamless task organization have made in our workflow smoother than ever.",
+      name: "Alex Johnson",
+      title: "CEO, GrowthCo",
+      quote: "LeadSprint.AI replaced our entire SDR team's prospecting work. The AI outreach is more personalized than our manual emails.",
       rating: 5
     }
   ];
 
-  const renderStars = (rating: number) => {
+  const renderStars = (rating: number | undefined) => {
     return Array.from({ length: 5 }, (_, i) => (
       <svg
         key={i}
@@ -89,9 +67,9 @@ const Testimonials = () => {
         
         {/* Header Section */}
         <div className="text-center mb-16">
-          <p className="text-gray-600 mb-4">Reviews from people</p>
+          <p className="text-gray-600 mb-4">Social Proof</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
-            Trusted by 23,000+ happy customers
+            Trusted by founders, agencies, and sales teams
           </h2>
         </div>
 
@@ -116,7 +94,7 @@ const Testimonials = () => {
                   <p className="text-gray-600 text-sm truncate">
                     {testimonial.title}
                   </p>
-                </div>
+                </div>  
               </div>
 
               {/* Quote */}
@@ -126,7 +104,7 @@ const Testimonials = () => {
 
               {/* Star Rating */}
               <div className="flex items-center space-x-1">
-                {renderStars(testimonial.rating || 5)}
+                {renderStars(testimonial.rating)}
               </div>
             </div>
           ))}

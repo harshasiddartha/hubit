@@ -57,29 +57,44 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-block mb-6">
             <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
-              #1 task management app
+              LeadSprint.AI
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-8">
-            Boost your productivity with{' '}
-            <span className="text-orange-500">intuitive</span>{' '}
-            task management app.
+            Real-time intent →{' '}
+            <span className="text-orange-500">qualified pipeline</span>.{' '}
+            No extra hours, no extra hires.
           </h1>
+
+          {/* Subtext */}
+          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+            Find ready-to-buy accounts, enrich the right contacts, and send AI-personalized outreach—on autopilot.
+          </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <button className="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors">
-              Start 14 Days Free Trial
+              Start Free
             </button>
             <button className="bg-white text-gray-800 border-2 border-gray-800 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors flex items-center gap-2">
-              Book A Free Demo
+              Get a Demo
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
           </div>
+
+          {/* Subtext */}
+          <p className="text-lg text-gray-600 mb-8">
+            Stop chasing cold leads. Catch buying moments as they happen.
+          </p>
+
+          {/* Logos row placeholder */}
+          <p className="text-sm text-gray-500">
+            Trusted by solo founders, agencies, and modern sales teams
+          </p>
         </div>
       </div>
 

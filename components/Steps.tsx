@@ -7,20 +7,26 @@ const Steps = () => {
     {
       id: 1,
       icon: '/cfa.svg',
-      title: 'Create Free Account',
-      description: 'Elevate your efficiency and streamline your workflow by downloading our innovative app.'
+      title: 'Detect',
+      description: 'Funding, hiring, tech changes, and pain posts in real time.'
     },
     {
       id: 2,
       icon: '/itm.svg',
-      title: 'Invite Team Members',
-      description: 'Elevate your efficiency and streamline your workflow by downloading our innovative app.'
+      title: 'Qualify',
+      description: 'AI classifies intent, scores ICP fit (0–100), explains "why now."'
     },
     {
       id: 3,
       icon: '/iiw.svg',
-      title: 'Instantly Improve Workflow',
-      description: 'Elevate your efficiency and streamline your workflow by downloading our innovative app.'
+      title: 'Enrich',
+      description: 'Decision-makers, verified emails, firmographics; dedupe built-in.'
+    },
+    {
+      id: 4,
+      icon: '/rtu.svg',
+      title: 'Engage',
+      description: 'AI-personalized emails/DMs, sequenced and tracked.'
     }
   ];
 
@@ -30,12 +36,15 @@ const Steps = () => {
         {/* Main Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
-            Start improving productivity with just 3 steps
+            How It Works
           </h2>
+          <p className="text-xl text-gray-600 mt-4">
+            4 simple steps to turn intent into revenue
+          </p>
         </div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {steps.map((step) => (
             <div key={step.id} className="text-center">
               {/* Icon Container */}
@@ -60,6 +69,13 @@ const Steps = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center mt-16">
+          <button className="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors">
+            See it in action
+          </button>
         </div>
       </div>
     </div>
