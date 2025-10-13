@@ -26,10 +26,10 @@ const Features = () => {
         
         {/* Header Section */}
         <div className="text-center mb-16">
-          <button className="mb-6 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
+          <button className="mb-6 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors font-inter">
             Core Features
           </button>
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 font-inter">
             Everything you need to turn intent into revenue.
           </h2>
         </div>
@@ -39,8 +39,8 @@ const Features = () => {
           
           {/* Top Left Card - Live Intent Engine */}
           <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Live Intent Engine</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 font-inter">Live Intent Engine</h3>
+            <p className="text-gray-600 mb-6 font-inter">
               Hiring spikes, funding rounds, stack shifts, launches, problem mentions—all detected in real time.
             </p>
             
@@ -57,8 +57,8 @@ const Features = () => {
 
           {/* Top Right Card - AI Lead Scoring */}
           <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">AI Lead Scoring</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 font-inter">AI Lead Scoring</h3>
+            <p className="text-gray-600 mb-6 font-inter">
               Recency × signal strength × ICP fit, with clear explanations for every score.
             </p>
             
@@ -174,16 +174,16 @@ const Features = () => {
               alt="One-Click Enrichment"
               className="w-full h-48 object-contain mb-4"
             />
-            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">One-Click Enrichment</h3>
-            <p className="text-gray-600 text-center">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center font-inter">One-Click Enrichment</h3>
+            <p className="text-gray-600 text-center font-inter">
               Founders, execs, buyers; verified emails & LinkedIn with built-in deduplication.
             </p>
           </div>
 
           {/* Bottom Right Card - AI Outreach Studio */}
           <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">AI Outreach Studio</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 font-inter">AI Outreach Studio</h3>
+            <p className="text-gray-600 mb-6 font-inter">
               Context-aware copy, cadences, reply tracking—all personalized by AI for maximum engagement.
             </p>
             

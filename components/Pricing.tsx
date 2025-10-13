@@ -61,13 +61,13 @@ const Pricing = () => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-12">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-12 font-inter">
             Choose the plan that fits your growth stage.
           </h2>
 
           {/* Pricing Toggle */}
           <div className="flex items-center justify-center space-x-4 mb-16">
-            <span className={`text-sm font-medium ${!isYearly ? 'text-gray-900' : 'text-gray-500'}`}>
+            <span className={`text-sm font-medium font-inter ${!isYearly ? 'text-gray-900' : 'text-gray-500'}`}>
               Monthly
             </span>
             
@@ -84,7 +84,7 @@ const Pricing = () => {
               />
             </button>
             
-            <span className={`text-sm font-medium ${isYearly ? 'text-gray-900' : 'text-gray-500'}`}>
+            <span className={`text-sm font-medium font-inter ${isYearly ? 'text-gray-900' : 'text-gray-500'}`}>
               Yearly
             </span>
           </div>
@@ -105,19 +105,19 @@ const Pricing = () => {
               )}
 
               {/* Plan Title */}
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 font-inter">
                 {plan.name}
               </h3>
 
               {/* Price */}
               <div className="mb-2">
-                <span className="text-5xl font-bold text-gray-900">
+                <span className="text-5xl font-bold text-gray-900 font-inter">
                   ${isYearly ? plan.yearlyPrice : plan.monthlyPrice}
                 </span>
               </div>
 
               {/* Billing Cycle */}
-              <p className="text-gray-600 mb-8">
+              <p className="text-gray-600 mb-8 font-inter">
                 per user / {isYearly ? 'year' : 'month'}
               </p>
 
@@ -130,18 +130,18 @@ const Pricing = () => {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-gray-700 font-inter">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               {/* CTA Button */}
-              <button className="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors mb-4">
+              <button className="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors mb-4 font-inter-button">
                 Start Free Trial
               </button>
 
               {/* Disclaimer */}
-              <p className="text-gray-500 text-sm text-center">
+              <p className="text-gray-500 text-sm text-center font-inter">
                 No credit card required
               </p>
             </div>
@@ -150,7 +150,7 @@ const Pricing = () => {
 
         {/* Footer Section */}
         <div className="text-center">
-          <button className="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors">
+          <button className="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors font-inter-button">
             View Pricing
           </button>
         </div>

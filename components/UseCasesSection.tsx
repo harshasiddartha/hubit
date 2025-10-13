@@ -38,10 +38,10 @@ const UseCasesSection = () => {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight font-inter">
             See LeadSprint.AI in action
           </h2>
-          <p className="text-xl text-gray-600 mt-4">
+          <p className="text-xl text-gray-600 mt-4 font-inter">
             Real examples of how our platform turns intent into meetings
           </p>
         </div>
@@ -58,27 +58,27 @@ const UseCasesSection = () => {
                 <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4 text-2xl">
                   {useCase.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">
+                <h3 className="text-xl font-bold text-gray-900 font-inter">
                   {useCase.persona}
                 </h3>
               </div>
 
               {/* Scenario */}
               <div className="mb-6">
-                <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">
+                <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2 font-inter">
                   Scenario
                 </h4>
-                <p className="text-gray-800 font-medium">
+                <p className="text-gray-800 font-medium font-inter">
                   {useCase.scenario}
                 </p>
               </div>
 
               {/* Process */}
               <div>
-                <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">
+                <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2 font-inter">
                   LeadSprint.AI Process
                 </h4>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed font-inter">
                   {useCase.process}
                 </p>
               </div>
@@ -86,7 +86,7 @@ const UseCasesSection = () => {
               {/* Arrow indicator */}
               <div className="mt-6 flex justify-center">
                 <div className="flex items-center text-orange-500">
-                  <span className="text-sm font-medium">Result</span>
+                  <span className="text-sm font-medium font-inter">Result</span>
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -98,10 +98,10 @@ const UseCasesSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="text-lg text-gray-600 mb-6 font-inter">
             Ready to see how LeadSprint.AI can transform your sales process?
           </p>
-          <button className="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors">
+          <button className="bg-gray-800 text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-gray-700 transition-colors font-inter-button">
             Start Your Free Trial
           </button>
         </div>

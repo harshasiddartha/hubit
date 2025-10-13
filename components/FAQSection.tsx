@@ -38,7 +38,7 @@ const FAQSection = () => {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight font-inter">
             Frequently Asked Questions
           </h2>
         </div>
@@ -55,7 +55,7 @@ const FAQSection = () => {
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                <h3 className="text-lg font-semibold text-gray-900 pr-4 font-inter">
                   {faq.question}
                 </h3>
                 <div className="flex-shrink-0">
@@ -81,7 +81,7 @@ const FAQSection = () => {
               {openIndex === index && (
                 <div className="px-6 pb-6">
                   <div className="border-t border-gray-200 pt-4">
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed font-inter">
                       {faq.answer}
                     </p>
                   </div>

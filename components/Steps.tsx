@@ -35,10 +35,10 @@ const Steps = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 font-inter">
             How It Works
           </h2>
-          <p className="text-xl text-gray-600 mt-4">
+          <p className="text-xl text-gray-600 mt-4 font-inter">
             4 simple steps to turn intent into revenue
           </p>
         </div>
@@ -59,12 +59,12 @@ const Steps = () => {
               </div>
 
               {/* Step Title */}
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 font-inter">
                 {step.title}
               </h3>
 
               {/* Step Description */}
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed font-inter">
                 {step.description}
               </p>
             </div>
@@ -73,7 +73,7 @@ const Steps = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <button className="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors">
+          <button className="bg-gray-800 text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-gray-700 transition-colors font-inter-button">
             See it in action
           </button>
         </div>

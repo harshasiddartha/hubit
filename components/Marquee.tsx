@@ -16,7 +16,7 @@ const Marquee = () => {
 
   // Only 5 should be visible at a time, so set wrapper width accordingly (5 logos * logoWidth + margins)
   // For seamless scroll, duplicate enough to fill the animation
-  const visibleCount = 5;
+  // const visibleCount = 5;
   // At least 2x render for seamless loop
   const duplicatedCompanies = [...companies, ...companies];
 
@@ -29,8 +29,8 @@ const Marquee = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Thousands of businesses use Hubit to improve daily work.
+          <h2 className="text-3xl font-bold text-gray-900 font-inter">
+            Thousands of businesses use LeadSprint.AI to improve daily work.
           </h2>
         </div>
 

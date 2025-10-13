@@ -5,8 +5,20 @@ import React from 'react';
 const DarkHero = () => {
   return (
     <div className="relative bg-white overflow-hidden">
-      {/* Dark Background Container */}
-      <div className="relative bg-gray-900 rounded-2xl mx-4 sm:mx-8 lg:mx-16 my-8 lg:my-16 min-h-[80vh] flex items-center justify-center">
+      {/* Dark Background Container with background image */}
+      <div
+        className="relative rounded-2xl mx-4 sm:mx-8 lg:mx-16 my-8 lg:my-16 min-h-[80vh] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: `url('/ctaimage.avif')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          // a dark overlay for contrast
+          position: 'relative'
+        }}
+      >
+        {/* Overlay for darkness */}
+        <div className="absolute inset-0 bg-gray-900 opacity-80 pointer-events-none"></div>
         
         {/* Abstract Shapes */}
         {/* Top-left coral-orange shape */}
@@ -52,7 +64,7 @@ const DarkHero = () => {
         </div>
 
         {/* Bottom Cards */}
-        <div className="absolute bottom-0 left-0 right-0 p-8">
+        <div className="absolute bottom-0 left-0 right-0 p-8 z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
             
             {/* Bottom-Left Card - Running Task */}

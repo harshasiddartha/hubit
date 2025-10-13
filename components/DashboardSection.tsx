@@ -45,12 +45,12 @@ const DashboardSection = () => {
               </div>
 
               {/* Main Heading */}
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight font-inter">
                 Real-time intent, not stale lists.
               </h2>
 
               {/* Description */}
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <p className="text-gray-600 leading-relaxed text-lg font-inter">
                 End-to-end: signals → scoring → enrichment → outreach → analytics. Founder-fast: minutes to first outreach, not weeks.
               </p>
 
@@ -65,8 +65,8 @@ const DashboardSection = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Real-time intent detection</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2 font-inter">Real-time intent detection</h3>
+                    <p className="text-gray-600 font-inter">
                       Catch buying signals as they happen—funding, hiring, tech changes, and pain points in real time.
                     </p>
                   </div>
@@ -80,8 +80,8 @@ const DashboardSection = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Complete automation</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2 font-inter">Complete automation</h3>
+                    <p className="text-gray-600 font-inter">
                       From signals to scoring to enrichment to outreach to analytics—everything automated in one platform.
                     </p>
                   </div>
