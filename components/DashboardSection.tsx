@@ -4,7 +4,7 @@ import React from 'react';
 
 const DashboardSection = () => {
   return (
-    <div className="bg-gray-50 py-20">
+    <div className="bg-gray-50 py-20 font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -37,7 +37,7 @@ const DashboardSection = () => {
             <div className="space-y-8">
               
               {/* Why LeadSprint.AI Badge */}
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm font-inter">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>

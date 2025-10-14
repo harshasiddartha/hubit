@@ -91,14 +91,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <button
               onClick={() => scrollToSection('pricing')}
-              className="bg-gray-800 text-white px-8 py-3 rounded-xl text-lg font-semibold transition-colors font-inter-button border border-gray-700 hover:bg-gray-700 hover:border-[1px] hover:border-gray-300 hover:shadow-[0_0_10px_2px_rgba(156,163,175,0.35)]"
+              className="bg-gray-800 text-white px-8 py-3 rounded-xl text-lg font-inter-button font-normal transition-colors border border-gray-700 hover:bg-gray-700 hover:border-[1px] hover:border-gray-300 hover:shadow-[0_0_10px_2px_rgba(156,163,175,0.35)]"
               style={{ borderWidth: "1px", borderColor: "#374151" }}
             >
               Start Free
             </button>
             <button
               onClick={() => scrollToSection('how-it-works')}
-              className="bg-white text-gray-800 border border-gray-800 px-8 py-3 rounded-xl text-lg font-semibold transition-colors flex items-center gap-2 font-inter-button hover:bg-gray-50 hover:border-[1px] hover:border-gray-300 hover:shadow-[0_0_10px_2px_rgba(156,163,175,0.35)]"
+              className="bg-white text-gray-800 border border-gray-800 px-8 py-3 rounded-xl text-lg font-inter-button font-normal transition-colors flex items-center gap-2 hover:bg-gray-50 hover:border-[1px] hover:border-gray-300 hover:shadow-[0_0_10px_2px_rgba(156,163,175,0.35)]"
               style={{ borderWidth: "1px", borderColor: "#1f2937" }}
             >
               Get a Demo
