@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LeadSprint.AI (Hubit)
 
-## Getting Started
+![LeadSprint.AI Banner](https://hubit-psi.vercel.app/hero-dash.png)
 
-First, run the development server:
+**LeadSprint.AI** is an AI-powered Go-To-Market (GTM) sales intelligence platform designed to catch buying signals as they happen. It automates the entire pipeline—from real-time intent signal detection and ICP scoring to contact enrichment and personalized outreach.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **⚡ Real-Time Intent Engine**: Detects buying signals such as funding rounds, hiring spikes, tech stack changes, and product launches in real time.
+- **🎯 AI Lead Scoring**: Calculates ICP fit scores ($0-100$) based on recency, signal strength, and company parameters with clear "why now" explanations.
+- **🔍 One-Click Enrichment**: Retrieves verified decision-maker emails, LinkedIn profiles, and firmographics with built-in deduplication.
+- **✉️ AI Outreach Studio**: Generates context-aware personalized emails and multi-channel outreach cadences tailored to target accounts.
+- **📊 Analytics & Monitoring**: Live activity tracking, task queues, and pipeline performance dashboards.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS, PostCSS
+- **Fonts:** Geist (`next/font`)
+- **Deployment:** Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ensure you have Node.js installed (v18.x or higher) along with npm, yarn, or pnpm.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/harshasiddartha/hubit.git](https://github.com/harshasiddartha/hubit.git)
+   cd hubit
